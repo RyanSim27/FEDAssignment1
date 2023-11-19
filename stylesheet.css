@@ -1,0 +1,183 @@
+/*Fonts imported google API*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Defining our header for each page. */
+.header {
+    background-color: #EF8354;
+    padding: 40px;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.header p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Style the navigation bar at the top of the page. */
+.navbar {
+    width: 100%;
+    position: fixed;
+    /* Make it so that the navigation bar follows you when you scroll down! */
+    z-index: 1;
+    top: 0;
+    background: #0B090A;
+    /*Color of navigation bar*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    min-width: 1200px;
+}
+
+
+.navbarlogo {
+    /*Sizes and formatting of the logo*/
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+
+}
+
+header::after {
+    /*Clearfix hack https://www.w3schools.com/howto/howto_css_clearfix.asp*/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navtitle {
+    text-decoration: none;
+    color: red;
+    margin-left: 15px;
+
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*This removes the bullet-points */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+    margin: 28px;
+}
+
+/*Changing color of the navigation links*/
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    /*This removes the underline*/
+}
+
+nav a:hover {
+    /*Changes color when hoverd*/
+    border-bottom: 1.6px solid #ff0004;
+    padding-bottom: 1.8px;
+
+
+}
+
+nav a:active {
+    /*Change color when you are in that tab*/
+    color: #ff0004;
+}
+
+/*End of Navigation Bar*/
+
+/*Footer*/
+.footer {
+    padding: 0px;
+    width: 100%;
+    background-color: #0B090A;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+.iconstyling {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.iconlocation {
+    padding-left: 20px;
+    float: left;
+    display: flex;
+
+}
+
+.hovering1:hover {
+    opacity: 80%;
+}
+
+.hovering2:hover {
+    opacity: 80%;
+}
+
+
+.textright {
+    float: right;
+    position: relative;
+    top: -62px;
+    padding: 20px;
+    margin: 0;
+}
+
+.textleft {
+    float: left;
+    position: relative;
+    top: -62px;
+    padding: 5px;
+    margin: 0;
+}
+
+/* Rows, side and main parts of page. */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 70%;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+}
+
+.side {
+    flex: 30%;
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+}
+
+.side p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-top: 40px;
+    margin: 0;
+}
