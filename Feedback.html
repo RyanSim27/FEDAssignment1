@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="navbar.js" defer></script>
     <style>
-      footer {
-    padding: 0px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    list-style: none;
-    display: inline-block;
-    height: 200px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    footer {
+      padding: 0px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      list-style: none;
+      display: inline-block;
+      height: 200px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
 
 }
 
@@ -63,28 +64,68 @@
       width: 500px;
       padding-left: 500px;;
     }
+    
+
+    #form-container {
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    label, input, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: maroon;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
  
     </style>
     <title>Asst 1</title>
   </head>
 
   <body style="background-color: black;">
-    <header>
-      <!--Navigation Bar-->
-      <div class="navbar">
-          
-          <nav>
-              <ul>
-                  <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
-                  <li style="padding-left: 50%; color: white;" ><a href="Music.html" target="_blank"></a>Music</li>
-                  <li><a href="Shows.html" target="_blank">Shows</a></li>
-                  <li><a href="Biography.html" target="_blank">Biography</a></li>
-                  <li><a href="Feedback.html" target="_blank">Feedback</a></li>
-                  
-              </ul>
-          </nav>
-      </div>
-  </header>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
+      <div class="nav-links">
+        <ul>
+            
+            <li><a href="Music.html" target="_blank">Music</a></li>
+            <li><a href="Shows.html" target="_blank">Shows</a></li>
+            <li><a href="Biography.html" target="_blank">Biography</a></li>
+            <li><a href="Feedback.html" target="_blank">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+  </div>
   <h1>
     <br>
     <b style="font-size: 100px;"><u>YOASOBI</u></b>
@@ -92,13 +133,41 @@
 
   <h1>
     <br>
-    <b style="font-size: 75px">Feedback:</b>
+    <b style="font-size: 75px">Contact Us:</b>
   </h1>
 
-  <footer>
-    <P style="text-align: center;">Contact us @:</P>
-    <p class="textright">Follow us @:</p>
-  </footer>
+  <div id="form-container">
+    <form id="contact-form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  </body>
-</html>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+  <script src="Contact us.js"></script>
+
+  <br>
+  <br>
+    <footer>
+      <P class="footer">Contact us <a href="Feedback.html" target="_blank" style="text-decoration: none;"><b style="color: maroon;">here</b></a></P>
+      <div class="iconlocation">
+        <div class="hovering1">
+            <a href="https://www.instagram.com/yoasobi_staff_/?hl=en" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/insta.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="hovering2">
+            <a href="https://twitter.com/YOASOBI_staff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/X_logo_2023_(white).png"
+                    alt="Twitter"></a>
+        </div>
+    </div>
+    </footer>
+  
+    </body>
+  </html>
+  

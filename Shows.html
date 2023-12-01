@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="navbar.js" defer></script>
     <style>
       footer {
     padding: 0px;
@@ -22,7 +23,7 @@
       height: 100%;
       width: auto;
       color: maroon;
-      background-color: black;
+     
       font-family: 'Poppins', sans-serif;
       text-align: center;
     }
@@ -37,10 +38,7 @@
       
     }
     
-    img {
-      
-        border: 7px solid darkred;
-    }
+   
 
     .logo{
       border: 0ch;
@@ -56,35 +54,132 @@
       
     }
 
-    p {
+    .para {
       color: whitesmoke;
       font-family: 'Poppins', sans-serif;
       text-align:center;
       width: 500px;
       padding-left: 500px;;
     }
+   
+    
+
+
+    .card-img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      border-radius: 15px;
+      justify-content: center;
+    }
+
+    .card-body {
+  /* Remove the fixed width */
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px); /* Initial blur */
+  border-radius: 15px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the text horizontally */
+  text-align: justify; /* Justify the text */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add a transition for a smooth effect */
+}
+.card:hover .card-body {
+  opacity: 1;
+  backdrop-filter: blur(15px);
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-info{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
  
+.card-btn{
+  color: white;
+  background: maroon;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card-btn:hover{
+  color: maroon;
+  background: white;
+}
+.card-container {
+      display: flex;
+      justify-content: space-around; /* Adjust as needed */
+      margin-top: 20px; /* Add margin for spacing */
+    }
+    .card {
+      width: 300px; /* Adjust the card width as needed */
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 8px solid maroon;
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: filter 0.3s ease;
+      margin: 0 10px; /* Add margin for spacing */
+    }
+    @media (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on content */
+    margin: 0 0 20px 0; /* Adjust margin for spacing between stacked cards */
+  }
+ 
+}
+  
     </style>
     <title>Asst 1</title>
   </head>
 
   <body style="background-color: black;">
-    <header>
-      <!--Navigation Bar-->
-      <div class="navbar">
-          
-          <nav>
-              <ul>
-                  <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
-                  <li style="padding-left: 50%; color: white;" ><a href="Music.html" target="_blank"></a>Music</li>
-                  <li><a href="Shows.html" target="_blank">Shows</a></li>
-                  <li><a href="Biography.html" target="_blank">Biography</a></li>
-                  <li><a href="Feedback.html" target="_blank">Feedback</a></li>
-                  
-              </ul>
-          </nav>
-      </div>
-  </header>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
+      <div class="nav-links">
+        <ul>
+            
+            <li><a href="Music.html" target="_blank">Music</a></li>
+            <li><a href="Shows.html" target="_blank">Shows</a></li>
+            <li><a href="Biography.html" target="_blank">Biography</a></li>
+            <li><a href="Feedback.html" target="_blank">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+  </div>
   <h1>
     <br>
     <b style="font-size: 100px;"><u>YOASOBI</u></b>
@@ -95,11 +190,69 @@
     <b style="font-size: 75px">Shows:</b>
   </h1>
 
+  <div class="card-container">
+    <!-- Card 1 -->
+    
 
+    <!-- Card 1 -->
+    <div class="card">
+      <!-- Adjust the content of the second card as needed -->
+      <img src="Media/YOASOBI-Photo-Kato-Shumpei-billboard-1548.webp" class="card-img">
+      <div class="card-body">
+        <h3 class="card-title">
+          Korea
+        </h3>
+        <p class="card-sub-title">Seoul, Korea</p>
+        <p class="card-info">안녕하세요 Korean fans, we are coming to Seoul soon, keep a look out for when we come!</p>
+        <button class="card-btn">Book Tickets</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="Media/yoasobi-asia-tour.jpg" class="card-img">
+      <div class="card-body">
+        <h3 class="card-title">
+          SEA Tour
+        </h3>
+        <p class="card-sub-title">Singapore, Malaysia and Indonesia</p>
+        <p class="card-info">Attention all South East Asia YOASOBI fans, we're coming near you so keep a look out for our tickets</p>
+        <button class="card-btn">Book Tickets</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <!-- Adjust the content of the third card as needed -->
+      <img src="Media/image.webp" class="card-img">
+      <div class="card-body">
+        <h3 class="card-title">
+          Taiwan
+        </h3>
+        <p class="card-sub-title">Taipei, Taiwan</p>
+        <p class="card-info">Taiwanese fans, we hear you, and we're coming to Taipei soon. Sit tight and we'll see you soon!</p>
+        <button class="card-btn">Book Tickets</button>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
   <footer>
-    <P style="text-align: center;">Contact us @:</P>
-    <p class="textright">Follow us @:</p>
+    <P class="footer">Contact us <a href="Feedback.html" target="_blank" style="text-decoration: none;"><b style="color: maroon;">here</b></a></P>
+    <div class="iconlocation">
+      <div class="hovering1">
+          <a href="https://www.instagram.com/yoasobi_staff_/?hl=en" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/insta.png"
+                  alt="Instagram"></a>
+      </div>
+      <div class="hovering2">
+          <a href="https://twitter.com/YOASOBI_staff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/X_logo_2023_(white).png"
+                  alt="Twitter"></a>
+      </div>
+  </div>
   </footer>
 
   </body>
 </html>
+
