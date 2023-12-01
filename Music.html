@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="navbar.js" defer></script>
     <style>
       footer {
     padding: 0px;
@@ -55,6 +56,7 @@
       margin-right: auto;
       
     }
+    
 
     p {
       color: whitesmoke;
@@ -63,28 +65,57 @@
       width: 500px;
       padding-left: 500px;;
     }
+    .bottom-images {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+}
+
+.bottom-image {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin: 10px; /* Adjust the margin as needed */
+}
+.vid {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for widescreen videos */
+    height: 0;
+    
+}
+
+.vid iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
  
     </style>
     <title>Asst 1</title>
   </head>
 
   <body style="background-color: black;">
-    <header>
-      <!--Navigation Bar-->
-      <div class="navbar">
-          
-          <nav>
-              <ul>
-                  <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
-                  <li style="padding-left: 50%; color: white;" ><a href="Music.html" target="_blank"></a>Music</li>
-                  <li><a href="Shows.html" target="_blank">Shows</a></li>
-                  <li><a href="Biography.html" target="_blank">Biography</a></li>
-                  <li><a href="Feedback.html" target="_blank">Feedback</a></li>
-                  
-              </ul>
-          </nav>
-      </div>
-  </header>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
+      <div class="nav-links">
+        <ul>
+            
+            <li><a href="Music.html" target="_blank">Music</a></li>
+            <li><a href="Shows.html" target="_blank">Shows</a></li>
+            <li><a href="Biography.html" target="_blank">Biography</a></li>
+            <li><a href="Feedback.html" target="_blank">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+  </div>
   <h1>
     <br>
     <b style="font-size: 100px;"><u>YOASOBI</u></b>
@@ -92,15 +123,71 @@
 
   <h1>
     <br>
-    <b style="font-size: 75px">Music:</b>
+    <b style="font-size: 75px">New Releases:</b>
   </h1>
+  
 
+    <!-- First Video and Description -->
+    <div style="margin-bottom: 20px;" class="vid">
+      <iframe src="https://www.youtube.com/embed/ZxRQjB8-KOQ" title="YOASOBI / The Brave (「勇者」English Ver. )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+  
+    <!-- Red Horizontal Line -->
+    <hr style="width: 100%; border: 2px solid darkred; margin: 20px 0;">
+  
+    <!-- Second Video and Description -->
+    <div style="margin-top: 20px;" class="vid">
+      <iframe width="930" height="523" src="https://www.youtube.com/embed/shZyg5VFI1Y" title="YOASOBI「Biri-Biri」 Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  
+    <!-- Red Horizontal Line -->
+    <hr style="width: 100%; border: 2px solid darkred; margin: 20px 0;">
+  
+    <!-- Third Video and Description -->
+    <div style="margin-top: 20px;" class="vid">
+      <iframe width="930" height="523" src="https://www.youtube.com/embed/o4AxMk3SGUY" title="HERO / 初音ミク" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <h1>
+    <br>
+    <b style="font-size: 75px">Albums:</b>
+  </h1>
+<section class="bottom-images">
+  <a href="https://www.youtube.com/watch?v=k_Z-mAvkCbM&list=OLAK5uy_n5649sOS_z6-z87sw_cPhFn2LD3Zu2g-o&index=2" target="_blank"><img src="Media/Yoasobi_-_The_Book.jpg" alt="Image 1" class="bottom-image"></a>
+  <a href="https://www.youtube.com/watch?v=9UYh8sOCjYw&list=OLAK5uy_kWH_HHD962dXoBkPnt2b-6QkCwPLaNxW8&index=2" target="_blank"><img src="Media/Yoasobi_-_The_Book_2.jpg" alt="Image 2" class="bottom-image"></a>
+  <a href="https://www.youtube.com/watch?v=M4-XU0a2hf0&list=OLAK5uy_mf7arXvg0EkPzD7FVYcOtD4DnB5ROnrNA&index=2" target="_blank"><img src="Media/Yoasobi_-_The_Book_3.png" alt="Image 3" class="bottom-image"></a>
+</section>
 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<iframe style="border-radius:12px "  src="https://open.spotify.com/embed/artist/64tJ2EAv1R6UaZqc4iOCyj?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe allow="autoplay ; encrypted-media; fullscreen *; clipboard-write" frameborder="0" height="350" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/yoasobi-essentials/pl.295be32ba47b44c0bdfddae49ff263b5"></iframe>
 
-  <footer>
-    <P style="text-align: center;">Contact us @:</P>
-    <p class="textright">Follow us @:</p>
-  </footer>
-
-  </body>
-</html>
+<br>
+  <br>
+    <footer>
+      <P class="footer">Contact us <a href="Feedback.html" target="_blank" style="text-decoration: none;"><b style="color: maroon;">here</b></a></P>
+      <div class="iconlocation">
+        <div class="hovering1">
+            <a href="https://www.instagram.com/yoasobi_staff_/?hl=en" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/insta.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="hovering2">
+            <a href="https://twitter.com/YOASOBI_staff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/X_logo_2023_(white).png"
+                    alt="Twitter"></a>
+        </div>
+    </div>
+    </footer>
+  
+    </body>
+  </html>
+  

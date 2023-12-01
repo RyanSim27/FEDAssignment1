@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="navbar.js" defer></script>
     <style>
       footer {
     padding: 0px;
@@ -27,20 +28,6 @@
       text-align: center;
     }
 
-    h2 {
-      height: 100%;
-      width: auto;
-      color: maroon;
-      background-color: black;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      
-    }
-    
-    img {
-      
-        border: 7px solid darkred;
-    }
 
     .logo{
       border: 0ch;
@@ -55,36 +42,91 @@
       margin-right: auto;
       
     }
-
-    p {
-      color: whitesmoke;
+    .timeline{
+      position: relative;
+      max-width: 1200px;
+      margin: 100px auto;
       font-family: 'Poppins', sans-serif;
-      text-align:center;
-      width: 500px;
-      padding-left: 500px;;
     }
+    .container{
+      padding: 10px 75px;
+      position: relative;
+      width: 50%;
+      
+    }
+
+    .text-box{
+      padding: 20px 30px;
+      background: #fff;
+      position: relative;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .left-container{
+      left: 0;     
+    }
+    .right-container{
+      left: 50%;
+    }
+    .container img{
+      position: absolute;
+      width: 200px;
+      border-radius: 50%;
+      right: -175px;
+      top: 32px;
+      
+    }
+    .right-container img{
+      left: -175px;
+    }
+   @media screen and (max-width: 600px) {
+    
+    .timeline{
+      margin: 50px auto;
+    }
+    .container{
+      width: 400px;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+    .text-box{
+      font-size: 13px;
+    }
+    .text-box small{
+      margin-bottom: 10px;
+    }
+    .right-container{
+      left: 0;
+    }
+    .left-container img, .right-container img{
+      left: 10px;
+      width: 65px;
+    }
+   }
  
     </style>
     <title>Asst 1</title>
   </head>
 
   <body style="background-color: black;">
-    <header>
-      <!--Navigation Bar-->
-      <div class="navbar">
-          
-          <nav>
-              <ul>
-                  <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
-                  <li style="padding-left: 50%; color: white;" ><a href="Music.html" target="_blank"></a>Music</li>
-                  <li><a href="Shows.html" target="_blank">Shows</a></li>
-                  <li><a href="Biography.html" target="_blank">Biography</a></li>
-                  <li><a href="Feedback.html" target="_blank">Feedback</a></li>
-                  
-              </ul>
-          </nav>
-      </div>
-  </header>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <a href="index.html"><img src="Media/Logo_yoasobi.svg" class="logo"></a>
+      <div class="nav-links">
+        <ul>
+            
+            <li><a href="Music.html" target="_blank">Music</a></li>
+            <li><a href="Shows.html" target="_blank">Shows</a></li>
+            <li><a href="Biography.html" target="_blank">Biography</a></li>
+            <li><a href="Feedback.html" target="_blank">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+  </div>
   <h1>
     <br>
     <b style="font-size: 100px;"><u>YOASOBI</u></b>
@@ -94,12 +136,69 @@
     <br>
     <b style="font-size: 75px">Biography:</b>
   </h1>
-
-
-  <footer>
-    <P style="text-align: center;">Contact us @:</P>
-    <p class="textright">Follow us @:</p>
-  </footer>
-
-  </body>
-</html>
+<div class="timeline">
+  <div class="container left-container">
+    <img src="Media/Yoru_ni_Kakeru_cover_art.jpg">
+    <div class="text-box">
+      <h2><b>Yoru ni Kakeru</b></h2>
+      <small><b>2019</b></small>
+      <p>This was YOASOBI's first song and is still their most played song on spotify. Altough it talks about dark tones, it is an enjoyable song and very catchy to this day.</p>
+    </div>
+  </div>
+</div>
+<div class="timeline">
+  <div class="container right-container">
+    <img src="Media/Yoasobi_-_Kaibutsu.jpg">
+    <div class="text-box">
+      <h2>Kaibutsu (Monster)</h2>
+      <small><b>2021</b></small>
+      <p>This song was made for the anime "Beastars" and was nominated and won the "Best Artist Song Award" for the Anisong Awards in 2021.</p>
+    </div>
+  </div>
+</div><div class="timeline">
+  <div class="container left-container">
+    <img src="Media/Shukufuku.webp">
+    <div class="text-box">
+      <h2>Shukufuku</h2>
+      <small><b>2022</b></small>
+      <p>This is the opening for the anime "Mobile Suit Gundam: Witch from Mercury". This song was widely well recieved and was nominated for the "Best Work Award" for the Anisong Awards in 2022.</p>
+    </div>
+  </div>
+</div><div class="timeline">
+  <div class="container right-container">
+    <img src="Media/Yoasobi_-_Idol.png">
+    <div class="text-box">
+      <h2>Idol</h2>
+      <small><b>2023</b></small>
+      <p>This song is the opening for the anime "Oshi no Ko" and was very well recieved by fans. It's music video is their most viewed video on youtube and has won many awards, such as "Song of the Year" by MTV Video Music Awards Japan.</p>
+    </div>
+  </div>
+</div><div class="timeline">
+  <div class="container left-container">
+    <img src="Media/biribiri.jpg">
+    <div class="text-box">
+      <h2>Biri-Biri</h2>
+      <small><b>2023</b></small>
+      <p>Biri-Biri is one of their newest songs and is a collab with the widely known Nintendo game Pokemon. At the time of editing it has been released for 12 days and has 5.7 million views on youtube.</p>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+    <footer>
+      <P class="footer">Contact us <a href="Feedback.html" target="_blank" style="text-decoration: none;"><b style="color: maroon;">here</b></a></P>
+      <div class="iconlocation">
+        <div class="hovering1">
+            <a href="https://www.instagram.com/yoasobi_staff_/?hl=en" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/insta.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="hovering2">
+            <a href="https://twitter.com/YOASOBI_staff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="iconstyling" style="border: 0cap;" src="media/X_logo_2023_(white).png"
+                    alt="Twitter"></a>
+        </div>
+    </div>
+    </footer>
+  
+    </body>
+  </html>
+  
