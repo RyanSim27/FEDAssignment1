@@ -1,7 +1,7 @@
 # FEDAssignment1
 This is a band website for the duo YOASOBI
 The main color theme for the website are their signature colors red and black
-It is going to have 5 total pages: About us, Music, Shows, Biography, Feedback
+It is going to have 5 total pages: About us, Music, Shows, Biography, Contact Us
 
 About us is going to be a brief over view aboout the duo YOASOBI and what they have done in the band and what they have done solo as well
 
@@ -11,4 +11,8 @@ Shows are going to show when they are coming to perform in the future so that fa
 
 Biography is going to show off all the songs they have made as YOASOBI in the recent year/years
 
-Feedback is going to have a feedback form to ask how to improve on the website or the band
+Contact Us is going to have a Contact Us form to ask questions to the band
+
+The main audiecne for this website is YOASOBI fans who want to know more about them. FOr example, if they want to see their new releases of music, they can check the songs tab and check it out, or they want to know if they are touring, they can check it out under the shows tab. 
+
+This is mainly catering to those who want to know more about their ongoings and some background information on the band.
