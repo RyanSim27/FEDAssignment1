@@ -2,29 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
-/* Defining our header for each page. */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 10px 0px;
-    background-color: black;
-    z-index: 1000;
-    width: 100%;
-
-}
-
-.header h1 {
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.header p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 /* Style the navigation bar at the top of the page. */
 .navbar {
     display: flex;
@@ -114,15 +91,19 @@ nav a:hover {
     color: red;
 
 }
+footer {
+    padding: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 
-nav a:active {
-    /*Change color when you are in that tab*/
-    color: #ff0004;
 }
 
-/*End of Navigation Bar*/
-
-/*Footer*/
 .footer {
     padding: 0px;
     width: 100%;
@@ -157,58 +138,17 @@ nav a:active {
     opacity: 80%;
 }
 
-
-.textright {
-    float: right;
-    position: relative;
-    top: -62px;
-    padding: 20px;
-    margin: 0;
-}
-
-.textleft {
-    float: left;
-    position: relative;
-    top: -62px;
-    padding: 5px;
-    margin: 0;
-}
-
-/* Rows, side and main parts of page. */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main {
-    flex: 70%;
-    background-color: aliceblue;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    width: 100vw;
-}
-
-.side {
-    flex: 30%;
-    background-color: lightblue;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    width: 100vw;
-}
-
-.side p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.main p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
     padding-top: 40px;
     margin: 0;
     
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 /* Responsive */
 
 @media(max-width: 600px){
